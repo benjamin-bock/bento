@@ -5,7 +5,10 @@
 
 window.onload = displayClock();
 function displayClock() {
-	const monthNames = ['Jan', 'Feb', ' ' + 'mars', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+	const monthNames = [
+		'janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin',
+		'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.'
+	];
 
 	var d = new Date();
 	var mm = monthNames[d.getMonth()];
