@@ -11,7 +11,7 @@ const CONFIG = {
 	// └─┘┴ ┴└─┘┴└─┘└─┘
 
 	// General
-	name: 'Benjamin',
+	name: 'Benjamin oui',
 	imageBackground: false,
 	openInNewTab: true,
 	twelveHourFormat: false,
@@ -26,14 +26,14 @@ const CONFIG = {
 	bentoLayout: 'bento', // 'bento', 'lists', 'buttons'
 
 	// Weather
-	weatherKey: 'InsertYourAPIKeyHere123456', // Write here your API Key
+	weatherKey: 'dcb0bebdf5f6f5bb8c816b693bb10740', // Write here your API Key
 	weatherIcons: 'OneDark', // 'Onedark', 'Nord', 'Dark', 'White'
 	weatherUnit: 'C', // 'F', 'C'
-	language: 'en', // More languages in https://openweathermap.org/current#multi
+	language: 'fr', // More languages in https://openweathermap.org/current#multi
 
 	trackLocation: true, // If false or an error occurs, the app will use the lat/lon below
-	defaultLatitude: '37.775',
-	defaultLongitude: '-122.419',
+	defaultLatitude: '50.630888',
+	defaultLongitude: '5.970345',
 
 	// Autochange
 	autoChangeTheme: true,
@@ -61,31 +61,31 @@ const CONFIG = {
 			id: '2',
 			name: 'Mail',
 			icon: 'mail',
-			link: 'https://mail.protonmail.com/',
+			link: 'https://gmail.com/',
 		},
 		{
 			id: '3',
-			name: 'Todoist',
-			icon: 'trello',
-			link: 'https://todoist.com',
+			name: 'LinkedIn',
+			icon: 'linkedin',
+			link: 'https://linkedin.com',
 		},
 		{
 			id: '4',
-			name: 'Calendar',
-			icon: 'calendar',
-			link: 'https://calendar.google.com/calendar/r',
+			name: 'Youtube',
+			icon: 'youtube',
+			link: 'https://youtube.com',
 		},
 		{
 			id: '5',
-			name: 'Reddit',
-			icon: 'glasses',
-			link: 'https://reddit.com',
+			name: 'Calendar',
+			icon: 'calendar',
+			link: 'https://my.calendar.uliege.be/calendar/cal?vt=month&dt=2025-03-21&et=student&fid0=s2304467',
 		},
 		{
 			id: '6',
-			name: 'Odysee',
-			icon: 'youtube',
-			link: 'https://odysee.com/',
+			name: 'Gradescope',
+			icon: 'chart-no-axes-column',
+			link: 'https://www.gradescope.com/',
 		},
 	],
 
@@ -135,46 +135,46 @@ const CONFIG = {
 	// First Links Container
 	firstlistsContainer: [
 		{
-			icon: 'music',
+			icon: 'graduation-cap',
 			id: '1',
 			links: [
 				{
-					name: 'Inspirational',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'myULiège',
+					link: 'https://my.uliege.be/',
 				},
 				{
-					name: 'Classic',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'eCampus',
+					link: 'https://ecampus.uliege.be/',
 				},
 				{
-					name: 'Oldies',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'Outlook',
+					link: 'https://outlook.office.com/mail/',
 				},
 				{
-					name: 'Rock',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'OneDrive - Ingé',
+					link: 'https://onedrive.live.com/?authkey=%21AMHXx2%5FUrY4yghM&id=391684E81371AC25%2148720&cid=391684E81371AC25',
 				},
 			],
 		},
 		{
-			icon: 'coffee',
+			icon: 'code-xml',
 			id: '2',
 			links: [
 				{
-					name: 'Linkedin',
-					link: 'https://www.linkedin.com',
+					name: 'ChatGPT',
+					link: 'https://chatgpt.com/',
 				},
 				{
-					name: 'Dribbble',
-					link: 'https://www.dribbble.com',
+					name: 'DeepSeek',
+					link: 'https://deepseek.com/',
 				},
 				{
-					name: 'Trello',
-					link: 'https://www.trello.com',
+					name: 'Overleaf',
+					link: 'https://www.overleaf.com/',
 				},
 				{
-					name: 'Slack',
-					link: 'https://www.slack.com',
+					name: 'phpMyAdmin',
+					link: 'http://localhost:8080/index.php',
 				},
 			],
 		},

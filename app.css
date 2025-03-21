@@ -12,7 +12,7 @@
   /* Font Size */
   --fg-primary: 12vh; /* Time and Greetings */
   --fg-secondary: 3vh; /* Greetings and Weather widger */
-  --fg-date: 8vh; /* Date */
+  --fg-date: 4vh; /* Date - reducing from 8vh to match screenshot */
   --fg-list: 2vh; /* Links List */
   --icon: 3vh; /* Icon Size */
 
@@ -31,6 +31,9 @@
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0.7)
   ); /* Filter color */
+
+  /* SVG Filter */
+  --svg-filter: invert(20%) sepia(10%) saturate(10%) hue-rotate(0deg) brightness(95%) contrast(95%);
 }
 
 .darktheme {
@@ -48,6 +51,9 @@
     rgba(0, 0, 0, 0.85),
     rgba(0, 0, 0, 0.85)
   ); /* Filter color */
+
+  /* SVG Filter */
+  --svg-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
 
 /* S T Y L E S */
@@ -141,6 +147,9 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 30px;
+  font-size: var(--fg-date);
+  font-weight: bold;
+  color: var(--fg);
 }
 
 .weather {
@@ -164,14 +173,20 @@ body {
 }
 
 #month,
-#day {
+#day,
+#year {
   font-size: var(--fg-date);
   font-weight: bold;
   color: var(--fg);
+  display: inline-block;
 }
 
-#day {
-  margin-left: 1.5rem;
+#day::after {
+  content: " ";
+}
+
+#month::after {
+  content: " ";
 }
 
 #greetings {
@@ -304,12 +319,19 @@ body {
   grid-row: 1 / span 2;
 }
 .listIcon {
-  /* margin-top: 3vh; */
   margin-bottom: 2vh;
   color: var(--fg);
-  width: var(--icon);
-  height: var(--icon);
+  width: 48px;
+  height: 48px;
 }
+
+.listIcon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: var(--svg-filter);
+}
+
 .listItem {
   text-decoration: none;
   font-size: var(--fg-list);

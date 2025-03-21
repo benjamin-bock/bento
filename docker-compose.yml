@@ -8,4 +8,4 @@ services:
       - /config.js:/usr/share/nginx/html/config.js
     ports:
       # Replace host port 80 (left side) with desired port.
-      - 80:80
+      - 8080:80
