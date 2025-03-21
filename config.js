@@ -166,7 +166,7 @@ const CONFIG = {
 				},
 				{
 					name: 'DeepSeek',
-					link: 'https://deepseek.com/',
+					link: 'https://chat.deepseek.com/',
 				},
 				{
 					name: 'Overleaf',
